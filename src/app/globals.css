@@ -3,19 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #171717;
+  --accent-light: #404040;
+  --surface: #F5F5F5;
+  --muted: #6B7280;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
   --font-inter: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

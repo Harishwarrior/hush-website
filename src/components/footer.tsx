@@ -1,13 +1,11 @@
-﻿import Link from "next/link";
 export const Footer = () => (
-  <footer className="fixed bottom-8 text-zinc-400 text-xs text-center w-full md:w-auto z-50">
-    ©{new Date().getFullYear()} Motion Provider —{" "}
-    <Link
-      href="https://burakdev.com"
-      target="_blank"
-      className="hover:underline underline-offset-2 hover:text-foreground transition-all duration-200 ease-in-out"
-    >
-      crafted by Burak Bilen
-    </Link>
+  <footer className="w-full py-8 text-center text-sm text-muted">
+    <div className="flex flex-col gap-4">
+      <p>© 2026 Hush. Built with care for a quieter digital life.</p>
+      <div className="flex items-center justify-center gap-6">
+        <a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+        <a href="mailto:hello@hush.app" className="hover:text-foreground transition-colors">Support</a>
+      </div>
+    </div>
   </footer>
 );

@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Motion Provider | Start",
+  title: "Hush - Smart Notification Management for Android",
   description:
-    "Build delightful React animations with Motion Provider. Performance-first rendering, intuitive APIs, and seamless developer experience.",
+    "Silence the noise, keep what matters. Hush intelligently filters, categorizes, and manages your Android notifications.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ colorScheme: "light" }}>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

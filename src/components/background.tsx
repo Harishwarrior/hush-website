@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { MotionContainer } from "motion-provider";
 
@@ -14,7 +14,7 @@ export const Background = () => (
     className="absolute inset-0 -z-20"
     style={{
       background:
-        "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(6, 182, 212, 0.25), transparent 70%), #000000",
+        "linear-gradient(to bottom, var(--background) 0%, var(--surface) 100%)",
     }}
   />
 );
