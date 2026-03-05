@@ -22,10 +22,12 @@ export const PhoneMockup = () => (
 
       {/* Screen content */}
       <div className="absolute inset-0 w-full h-full">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/hush-demo.gif"
-          alt="Hush App Demo"
+        <video
+          src="/hush-demo.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-fill"
         />
       </div>
