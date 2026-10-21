@@ -4,7 +4,10 @@ import { MotionContainer } from "motion-provider";
 import { features } from "@/constants/features";
 
 export const Hero = () => (
-  <section id="features" className="flex flex-col items-center text-center gap-8">
+  <section
+    id="features"
+    className="flex flex-col items-center text-center gap-8"
+  >
     <MotionContainer
       animation={{
         mode: ["filterBlurIn", "fadeIn"],
@@ -43,7 +46,12 @@ export const Hero = () => (
     </div>
 
     <MotionContainer
-      animation={{ mode: "fadeUp", delay: 2, transition: "gentle", duration: 1 }}
+      animation={{
+        mode: "fadeUp",
+        delay: 2,
+        transition: "gentle",
+        duration: 1,
+      }}
       elementType="div"
       className="flex flex-col items-center gap-3"
       id="download"
@@ -54,7 +62,7 @@ export const Hero = () => (
         rel="noopener noreferrer"
         className="hover:opacity-80 transition-opacity duration-200"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        {/* biome-ignore lint/performance/noImgElement: static export, next/image optimisation unavailable */}
         <img
           src="/google-play-badge.svg"
           alt="Get it on Google Play"

@@ -4,7 +4,12 @@ import { MotionContainer } from "motion-provider";
 
 export const Announcement = () => (
   <MotionContainer
-    animation={{ mode: "fadeIn", delay: 0.2, transition: "gentle", duration: 1 }}
+    animation={{
+      mode: "fadeIn",
+      delay: 0.2,
+      transition: "gentle",
+      duration: 1,
+    }}
     elementType="div"
     className="flex justify-center"
   >
