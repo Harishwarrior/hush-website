@@ -21,17 +21,27 @@ const policies = [
   {
     title: "Minimal Permissions",
     description:
-      "Hush only requests notification access, which is required to manage your notifications. No contacts, no location, no storage.",
+      "Hush needs notification access to group your notifications by channel. Channel automation through the accessibility service is optional and only runs when you start it. No contacts, no location, no storage.",
+  },
+  {
+    title: "One-Time Purchase via Google Play",
+    description:
+      "Unlimited reviews are an optional one-time purchase handled entirely by Google Play Billing. Hush never sees your payment details, and ownership is checked with Google Play on your device.",
+  },
+  {
+    title: "Stored Only on Your Device",
+    description:
+      "Your preferences, today's free review count and whether you've unlocked unlimited reviews are saved locally on your phone. Notification content is never saved.",
   },
   {
     title: "No Third-Party Sharing",
     description:
-      "We do not share, sell, or provide any user information to third parties. There is no data to share.",
+      "We do not share, sell, or provide any user information to third parties. The only external service Hush uses is Google Play Billing, and only for the optional purchase.",
   },
   {
     title: "Open & Transparent",
     description:
-      "Have questions about our privacy practices? Reach out anytime — we believe in full transparency.",
+      "Have questions about our privacy practices? Email harishanbalagandev@gmail.com. We believe in full transparency.",
   },
 ];
 
@@ -64,7 +74,7 @@ export const PrivacyPolicy = () => (
       </div>
 
       <p className="text-xs text-muted text-center">
-        Last updated: March 2026. This policy applies to the Hush Android application.
+        Last updated: October 2026. This policy applies to the Hush Android application.
       </p>
     </MotionContainer>
   </section>
