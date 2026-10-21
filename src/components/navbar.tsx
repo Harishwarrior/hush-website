@@ -11,8 +11,11 @@ export const Navbar = () => (
   >
     <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#home" className="flex items-center gap-2">
+        {/* biome-ignore lint/performance/noImgElement: static export, next/image optimisation unavailable */}
         <img src="/hush-logo.svg" alt="Hush" width={32} height={32} />
-        <span className="text-xl font-bold tracking-tight text-foreground">Hush</span>
+        <span className="text-xl font-bold tracking-tight text-foreground">
+          Hush
+        </span>
       </a>
 
       <div className="hidden md:flex items-center gap-8">
@@ -26,7 +29,6 @@ export const Navbar = () => (
           </a>
         ))}
       </div>
-
     </div>
   </MotionContainer>
 );

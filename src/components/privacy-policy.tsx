@@ -48,7 +48,12 @@ const policies = [
 export const PrivacyPolicy = () => (
   <section id="privacy" className="w-full max-w-4xl mx-auto py-20 px-4">
     <MotionContainer
-      animation={{ mode: "fadeIn", delay: 0.2, transition: "gentle", duration: 1 }}
+      animation={{
+        mode: "fadeIn",
+        delay: 0.2,
+        transition: "gentle",
+        duration: 1,
+      }}
       elementType="div"
       className="flex flex-col gap-10"
     >
@@ -57,7 +62,8 @@ export const PrivacyPolicy = () => (
           Privacy Policy
         </h2>
         <p className="mt-3 text-muted text-base max-w-xl mx-auto">
-          Your privacy is not just a feature — it is the foundation Hush is built on.
+          Your privacy is not just a feature — it is the foundation Hush is
+          built on.
         </p>
       </div>
 
@@ -67,14 +73,19 @@ export const PrivacyPolicy = () => (
             key={policy.title}
             className="rounded-2xl border border-foreground/10 bg-surface/50 p-5"
           >
-            <h3 className="font-semibold text-foreground mb-1">{policy.title}</h3>
-            <p className="text-sm text-muted leading-relaxed">{policy.description}</p>
+            <h3 className="font-semibold text-foreground mb-1">
+              {policy.title}
+            </h3>
+            <p className="text-sm text-muted leading-relaxed">
+              {policy.description}
+            </p>
           </div>
         ))}
       </div>
 
       <p className="text-xs text-muted text-center">
-        Last updated: October 2026. This policy applies to the Hush Android application.
+        Last updated: October 2026. This policy applies to the Hush Android
+        application.
       </p>
     </MotionContainer>
   </section>
