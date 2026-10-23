@@ -4,9 +4,9 @@ import { MotionContainer } from "motion-provider";
 
 const policies = [
   {
-    title: "No Data Collection",
+    title: "Notifications Stay on Your Phone",
     description:
-      "Hush operates entirely on your device. We do not collect, store, or transmit any personal data, notification content, or usage analytics.",
+      "Hush reads your notifications on your device only. Notification content, channel names and your app list are never collected, stored on a server, or sent anywhere. No usage analytics.",
   },
   {
     title: "Local Processing Only",
@@ -34,9 +34,14 @@ const policies = [
       "Your preferences, today's free review count and whether you've unlocked unlimited reviews are saved locally on your phone. Notification content is never saved.",
   },
   {
+    title: "Optional Diagnostic Reports",
+    description:
+      "If Hush crashes or channel automation fails, it sends a report to Firebase Crashlytics: device model, Android version and technical details of the Settings screen. Never notification content or your apps. Turn it off in Settings › Send diagnostic reports.",
+  },
+  {
     title: "No Third-Party Sharing",
     description:
-      "We do not share, sell, or provide any user information to third parties. The only external service Hush uses is Google Play Billing, and only for the optional purchase.",
+      "We do not share, sell, or provide any user information to third parties. Hush uses two Google services: Google Play Billing for the optional purchase, and Firebase Crashlytics for diagnostic reports.",
   },
   {
     title: "Open & Transparent",
